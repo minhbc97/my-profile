@@ -8,10 +8,21 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "MinhBC - Frontend & Mobile Developer",
-  description: "Lập trình viên Frontend và Mobile với nhiều dự án và kỹ năng đa dạng",
-  keywords: ["Frontend Developer", "Mobile Developer", "React", "React Native", "Next.js"],
-  authors: [{ name: "Frontend & Mobile Developer" }],
+  title: "Bùi Công Minh - Frontend Developer",
+  description:
+    "Bùi Công Minh — phát triển frontend (web & mobile). Next.js, Nuxt, Vue, React, React Native; Flutter thường dùng; Angular theo dự án.",
+  keywords: [
+    "Frontend Developer",
+    "Mobile Developer",
+    "Next.js",
+    "Nuxt",
+    "Vue",
+    "React",
+    "React Native",
+    "Flutter",
+    "Angular",
+  ],
+  authors: [{ name: "Bùi Công Minh" }],
   viewport: "width=device-width, initial-scale=1",
 };
 
@@ -21,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" className="scroll-smooth">
+    <html lang='vi' className='scroll-smooth'>
       <body
         className={`${firaCode.variable} font-mono antialiased`}
         suppressHydrationWarning={true}
