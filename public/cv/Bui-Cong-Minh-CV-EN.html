@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Cong-Minh Bui — Frontend Leader</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    color: #1f2937;
+    background: #f9fafb;
+    font-size: 11.5pt;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 820px;
+    margin: 28px auto;
+    background: #fff;
+    padding: 48px 56px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  header {
+    border-bottom: 2px solid #0d9488;
+    padding-bottom: 14px;
+    margin-bottom: 22px;
+  }
+  header h1 {
+    font-size: 26pt;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #111827;
+  }
+  header .role {
+    font-size: 13pt;
+    color: #0d9488;
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  header .contact {
+    margin-top: 10px;
+    font-size: 10.5pt;
+    color: #4b5563;
+  }
+  header .contact a { color: #0d9488; text-decoration: none; }
+  header .contact span.sep { margin: 0 8px; color: #d1d5db; }
+
+  .nda-notice {
+    margin-top: 8px;
+    font-size: 9.5pt;
+    color: #6b7280;
+    font-style: italic;
+  }
+
+  section { margin-bottom: 20px; }
+  h2 {
+    font-size: 11pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #0d9488;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+  }
+
+  .summary { color: #374151; text-align: justify; }
+
+  .job { margin-bottom: 16px; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .job-title { font-weight: 700; color: #111827; font-size: 11.5pt; }
+  .job-company { color: #0d9488; font-weight: 600; }
+  .job-meta { font-size: 10pt; color: #6b7280; font-style: italic; }
+  .job-loc { font-size: 10pt; color: #6b7280; }
+
+  .project {
+    margin: 8px 0 8px 0;
+    padding-left: 14px;
+    border-left: 2px solid #d1fae5;
+  }
+  .project-title { font-weight: 600; color: #111827; }
+  .project-tech {
+    font-size: 10pt;
+    color: #6b7280;
+    margin: 2px 0 4px 0;
+  }
+  .project ul { margin: 4px 0 0 18px; padding: 0; }
+  .project li { margin-bottom: 3px; color: #374151; }
+
+  ul.bullets { margin-left: 18px; }
+  ul.bullets li { margin-bottom: 4px; color: #374151; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 6px 14px;
+  }
+  .skills-grid dt { font-weight: 600; color: #111827; }
+  .skills-grid dd { color: #374151; }
+
+  @media print {
+    body { background: #fff; font-size: 10.5pt; }
+    .page { box-shadow: none; margin: 0; max-width: 100%; padding: 24px 28px; }
+    section, .job { break-inside: auto; page-break-inside: auto; }
+    .project { break-inside: avoid; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Cong-Minh Bui</h1>
+    <div class="role">Frontend Leader</div>
+    <div class="contact">
+      Hanoi, Vietnam
+      <span class="sep">|</span>
+      <a href="mailto:minhcongbui.bka60@gmail.com">minhcongbui.bka60@gmail.com</a>
+      <span class="sep">|</span>
+      +84 386 215 829
+      <span class="sep">|</span>
+      <a href="https://minhbc.vercel.app/">minhbc.vercel.app</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/minhbc97">GitHub</a>
+      <span class="sep">|</span>
+      <a href="https://www.linkedin.com/in/minhbcdev">LinkedIn</a>
+    </div>
+    <div class="nda-notice">Project codenames are used to comply with client NDAs. Full context can be discussed during interviews where permitted.</div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p class="summary">
+      Frontend Leader with 6+ years of experience delivering large-scale web and mobile
+      products for Japanese and Vietnamese enterprises across e-commerce, logistics,
+      HR tech, fintech and B2B platforms. Proven record of leading frontend teams within
+      product organisations of up to 45 engineers — mentoring developers, establishing
+      delivery standards, and driving hands-on execution across Angular, Next.js, Vue/Nuxt,
+      React Native and Flutter. Ship real-time, SEO-optimised systems end-to-end from
+      Figma design through architecture, code review and release. Comfortable bridging
+      UI/UX, frontend and mobile concerns within a single ownership scope.
+    </p>
+  </section>
+
+  <section>
+    <h2>Core Skills</h2>
+    <dl class="skills-grid">
+      <dt>Frameworks</dt>
+        <dd>Angular 20+, Next.js 13&ndash;16, React, React Native, Vue 3 / Nuxt 2&ndash;3, Flutter, Expo</dd>
+      <dt>Languages</dt>
+        <dd>TypeScript, JavaScript (ES2023), Dart; familiarity with Java, Kotlin, Objective-C, Swift</dd>
+      <dt>State &amp; Async</dt>
+        <dd>RxJS, Redux, Zustand-style stores, Socket.io, REST, async pipelines</dd>
+      <dt>UI / Design</dt>
+        <dd>Tailwind CSS 4, HeroUI, Vuetify, Ant Design, Less, Figma (UI/UX design)</dd>
+      <dt>Backend / Infra</dt>
+        <dd>Node.js, NestJS, Prisma, Supabase, Firebase, Docker; integration with Java Spring Boot &amp; PHP Laravel APIs</dd>
+      <dt>Quality &amp; Delivery</dt>
+        <dd>Code review, performance optimisation, SEO, mobile build &amp; release (APK/IPA), NFC / QR / native integrations</dd>
+      <dt>Leadership</dt>
+        <dd>Team leading, mentoring, delivery standards, architecture design, base-source ownership, Japanese client communication</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <!-- ===== GM SOLUTION ===== -->
+    <div class="job">
+      <div class="job-head">
+        <div>
+          <span class="job-title">Frontend Leader</span>,
+          <span class="job-company">GM Solution</span>
+          <span class="job-loc">&mdash; Hanoi, Vietnam</span>
+        </div>
+        <span class="job-meta">Jul 2022 &ndash; Present</span>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project FRE*** &mdash; B2B Agricultural Marketplace</div>
+        <div class="project-tech">Angular 20 &middot; Tailwind CSS 4 &middot; Socket.io &middot; RxJS &middot; Java Spring Boot APIs &nbsp;|&nbsp; Jun 2025 &ndash; Present &nbsp;|&nbsp; Frontend Leader &nbsp;|&nbsp; 45-person product team</div>
+        <ul>
+          <li><strong>Leadership:</strong> Led the frontend sub-team within a 45-person product organisation — owned FE delivery planning, task breakdown, sprint coordination, and alignment with backend, QA and PM.</li>
+          <li><strong>Leadership:</strong> Established code review standards, PR guidelines and component conventions; mentored developers on Angular 20, RxJS and async data-flow patterns.</li>
+          <li>Defined the Angular 20 base-source architecture for a multi-tenant marketplace (seller, buyer, admin) serving HoReCa with 10,000+ products and full VAT-invoice compliance.</li>
+          <li>Architected real-time chat on Socket.io with RxJS pipelines; built fine-grained RBAC and led SEO optimisation for the e-commerce surface.</li>
+          <li>Embedded seller WebView in the partner mobile app for a unified web/mobile UX.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project CAR*** &mdash; Internal Recruitment Platform</div>
+        <div class="project-tech">Next.js 13+ &middot; Tailwind CSS &middot; HeroUI &middot; Java Spring Boot &middot; Figma &nbsp;|&nbsp; Apr 2025 &ndash; May 2025 (2 mo) &nbsp;|&nbsp; Frontend Leader &amp; UI Designer &nbsp;|&nbsp; 8-person team (24 man-months)</div>
+        <ul>
+          <li><strong>Leadership:</strong> Sole FE owner in an 8-person squad — drove end-to-end delivery from Figma to release within a 2-month deadline; split tasks, reviewed PRs and unblocked teammates.</li>
+          <li>Designed UI in Figma, defined Next.js base architecture and shipped chat and role-based permission modules on schedule.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project NLJ*** &mdash; Automated Road Transport (Japan)</div>
+        <div class="project-tech">Next.js 13+ &middot; Tailwind CSS &middot; HeroUI &middot; REST API (Java Spring Boot) &nbsp;|&nbsp; Oct 2024 &ndash; Mar 2025 (6 mo) &nbsp;|&nbsp; Frontend Leader &nbsp;|&nbsp; 20-person team (120 man-months)</div>
+        <ul>
+          <li><strong>Leadership:</strong> Led the FE squad within a 20-person team — sprint planning, task assignment, code review and technical decision-making for a Japanese logistics client.</li>
+          <li><strong>Leadership:</strong> Mentored developers on Next.js/HeroUI patterns; aligned FE scope with backend API contracts and client UX expectations.</li>
+          <li>Defined frontend architecture and built dispatching workflow with route management and real-time order tracking.</li>
+          <li>Optimised large operational data tables via virtualisation and memoisation.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project KOT*** &mdash; Phase 2 / Mobile App (Workforce Time-Tracking, Japan)</div>
+        <div class="project-tech">Flutter &nbsp;|&nbsp; May 2024 &ndash; Sep 2024 (5 mo) &nbsp;|&nbsp; Mobile Developer &nbsp;|&nbsp; 11-person team (70 man-months)</div>
+        <ul>
+          <li>Primary mobile engineer on the App phase of a Japanese workforce time-tracking SaaS product.</li>
+          <li>Implemented attendance flows (check-in / check-out) and payroll-related logic on Flutter, optimised for the client&rsquo;s reliability and UX standards.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project PAR*** &mdash; HR &amp; Partner Management Platform (Japan)</div>
+        <div class="project-tech">Next.js 13+ &middot; Figma &nbsp;|&nbsp; Dec 2023 &ndash; Apr 2024 (5 mo) &nbsp;|&nbsp; Frontend Leader &amp; UI/UX Designer &nbsp;|&nbsp; 8-person team (88 man-months)</div>
+        <ul>
+          <li><strong>Leadership:</strong> Led frontend delivery in an 8-person team while balancing hands-on coding — coordinated FE tasks, tracked progress and conducted code reviews for Japanese enterprise releases.</li>
+          <li><strong>Leadership:</strong> Advised the client on UI/UX patterns for the Japanese market; translated Figma designs into a scalable Next.js component structure the team could extend.</li>
+          <li>Built CMS for component, partner and multi-level permission management on Next.js.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project KOT*** &mdash; Phase 1 / Tax &amp; Time-keeping Web (Japan)</div>
+        <div class="project-tech">Vue 3 &middot; Laravel (PHP) &middot; Inertia.js &nbsp;|&nbsp; Apr 2023 &ndash; Nov 2023 (8 mo) &nbsp;|&nbsp; Frontend Developer &nbsp;|&nbsp; 26-person team (120 man-months)</div>
+        <ul>
+          <li>Developed the employee tax-declaration / time-keeping web for a Japanese workforce time-tracking product line on Vue 3 + Laravel via Inertia.js.</li>
+          <li>Contributed across forms, validation, tax-rule UI and time-keeping flows for Japanese end users.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project TAB*** &mdash; Japan Travel Social Network</div>
+        <div class="project-tech">Nuxt 2 &middot; Vuetify &middot; Firebase &middot; Flutter (companion app) &middot; Laravel + MySQL backend &nbsp;|&nbsp; Jul 2022 &ndash; Mar 2023 (9 mo) &nbsp;|&nbsp; Frontend Leader &nbsp;|&nbsp; 13-person team (65 man-months)</div>
+        <ul>
+          <li><strong>Leadership:</strong> Led the frontend team within a 13-person project — set code-quality standards, reviewed PRs, guided task breakdown and mentored developers on Nuxt 2/Vuetify.</li>
+          <li><strong>Leadership:</strong> Coordinated with backend and mobile squads on Firebase integration, API contracts and release timelines.</li>
+          <li>Implemented core social features — feed, chat, comments and push notifications — with focus on UI performance on Vuetify.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== LUVINA ===== -->
+    <div class="job">
+      <div class="job-head">
+        <div>
+          <span class="job-title">Frontend &amp; Mobile Developer</span>,
+          <span class="job-company">Luvina Software</span>
+          <span class="job-loc">&mdash; Hanoi, Vietnam</span>
+        </div>
+        <span class="job-meta">May 2020 &ndash; Jul 2022</span>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project PET*** &mdash; Pet Care Platform</div>
+        <div class="project-tech">React.js &middot; Ant Design &middot; Less CSS &middot; Java Spring Boot APIs &nbsp;|&nbsp; Mar 2022 &ndash; May 2022 (3 mo) &nbsp;|&nbsp; Frontend Developer &nbsp;|&nbsp; 6-person team (60 man-months)</div>
+        <ul>
+          <li>Designed and shipped the admin dashboard with a consistent, extensible Ant Design system.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project NEO*** &mdash; Construction Site Management</div>
+        <div class="project-tech">React Native &middot; Vue.js &middot; PHP &middot; NFC / QR &middot; OpenWeather API &nbsp;|&nbsp; Jun 2021 &ndash; Feb 2022 (9 mo) &nbsp;|&nbsp; Frontend &amp; Mobile Developer &nbsp;|&nbsp; 15-person team (300 man-months)</div>
+        <ul>
+          <li>Solved domain-heavy problems on a 300 man-month construction-site management product: site tree-view diagrams, labour-safety control and access management.</li>
+          <li>Reviewed peer code, enforced coding standards and owned the build / release pipeline (APK / IPA).</li>
+          <li>Integrated peripheral data sources &mdash; NFC, QR codes and the OpenWeather API &mdash; into a unified mobile experience.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project ESR*** &mdash; Sales &amp; Marketing System</div>
+        <div class="project-tech">React Native &middot; React.js &middot; Redux &middot; Firebase &middot; Axios &middot; Java Spring Boot APIs &nbsp;|&nbsp; Sep 2020 &ndash; May 2021 (9 mo) &nbsp;|&nbsp; Frontend &amp; Mobile Developer &nbsp;|&nbsp; 40-person team (300 man-months)</div>
+        <ul>
+          <li>Delivered unified UI across web and mobile from a shared component library on a 40-person, 300 man-month sales &amp; marketing programme.</li>
+          <li>Implemented real-time chat and Firebase push-notification systems; managed complex sales-pipeline state with Redux.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Project BEE*** &mdash; Healthcare Mobile R&amp;D</div>
+        <div class="project-tech">Android Native (Java / Kotlin) &middot; Swift &middot; Flutter (research) &nbsp;|&nbsp; May 2020 &ndash; Aug 2020 &nbsp;|&nbsp; Mobile R&amp;D &nbsp;|&nbsp; 8-person team (200 man-months)</div>
+        <ul>
+          <li>Researched native iOS / Android development and Flutter; built experimental modules for a hospital-management product line in the ophthalmology domain.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===== VNPT ===== -->
+    <div class="job">
+      <div class="job-head">
+        <div>
+          <span class="job-title">Frontend Developer (Fresher)</span>,
+          <span class="job-company">VNPT</span>
+          <span class="job-loc">&mdash; Hanoi, Vietnam</span>
+        </div>
+        <span class="job-meta">Jan 2020 &ndash; May 2020</span>
+      </div>
+      <ul class="bullets">
+        <li>Full-time frontend fresher role focusing on JavaScript, HTML and CSS fundamentals.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== FREELANCE ===== -->
+  <section>
+    <h2>Freelance</h2>
+    <div class="job">
+      <div class="job-head">
+        <div>
+          <span class="job-title">Project GUV*** &mdash; Home-Cleaning Service Platform</span>
+          <span class="job-loc">&mdash; Frontend &amp; Mobile Developer</span>
+        </div>
+        <span class="job-meta">May 2021 &ndash; Oct 2021</span>
+      </div>
+      <div class="project">
+        <div class="project-tech">React Native (Mobile App) &middot; React.js &middot; Redux &middot; REST API</div>
+        <ul>
+          <li>Sole frontend owner of both the consumer mobile app and the operator web platform.</li>
+          <li>Built a real-time booking flow, order-status management, map-based geolocation and a service-rating system.</li>
+          <li>Tuned performance for smooth experience across iOS, Android and modern browsers.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PERSONAL PROJECT ===== -->
+  <section>
+    <h2>Personal Project</h2>
+    <div class="job">
+      <div class="job-head">
+        <div>
+          <span class="job-title">Project VIVU*** &mdash; Vietnam Travel Platform</span>
+          <span class="job-loc">&mdash; Self-directed full-stack project</span>
+        </div>
+        <span class="job-meta">Feb 2026 &ndash; Present</span>
+      </div>
+      <div class="project">
+        <div class="project-tech">Next.js 16 &middot; Prisma &middot; Supabase (Auth &amp; DB) &middot; Expo</div>
+        <ul>
+          <li>End-to-end full-stack project promoting Vietnamese tourism, exercising the latest Next.js stack with Supabase-based authentication.</li>
+          <li>Designed schema, auth flows and a shared codebase across web (Next.js) and mobile (Expo).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="job-head">
+      <div>
+        <span class="job-title">B.Eng. in Electronics &amp; Telecommunications</span>,
+        <span class="job-company">Hanoi University of Science and Technology (HUST)</span>
+      </div>
+      <span class="job-meta">Oct 2015 &ndash; May 2020</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <ul class="bullets">
+      <li>Vietnamese &mdash; Native</li>
+      <li>English &mdash; Professional working proficiency (technical reading &amp; writing; conversational)</li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>

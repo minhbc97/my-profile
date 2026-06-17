@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<title>Bùi Công Minh — Frontend Leader</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #2c3e50;
+    background: #f4f5f7;
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  .page {
+    max-width: 900px;
+    margin: 24px auto;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    min-height: 1100px;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    background: #1f2937;
+    color: #ecf0f1;
+    padding: 28px 22px;
+  }
+  .avatar-wrap {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .avatar-wrap img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0d9488;
+    background: #374151;
+  }
+  .avatar-placeholder {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #0d9488;
+    background: #374151;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: #9ca3af;
+    text-align: center;
+    padding: 10px;
+  }
+  .sidebar h1 {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .sidebar .role {
+    font-size: 12.5px;
+    color: #0d9488;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sidebar .section { margin-bottom: 18px; }
+  .sidebar .section-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0d9488;
+    text-transform: uppercase;
+    border-bottom: 1px solid #4b5563;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+  .sidebar .info-item {
+    margin: 5px 0;
+    font-size: 12px;
+    word-break: break-word;
+  }
+  .sidebar .info-item strong { color: #fff; }
+  .sidebar a { color: #a7f3d0; text-decoration: none; }
+  .sidebar ul { margin: 0; padding-left: 16px; }
+  .sidebar li { margin-bottom: 4px; font-size: 12px; }
+  .tag {
+    display: inline-block;
+    background: #374151;
+    color: #e5e7eb;
+    border-radius: 3px;
+    padding: 2px 7px;
+    font-size: 11px;
+    margin: 2px 3px 2px 0;
+  }
+
+  /* MAIN */
+  .main { padding: 32px 34px; }
+  .nda-notice {
+    font-size: 10.5px;
+    color: #6b7280;
+    font-style: italic;
+    margin-bottom: 16px;
+    padding: 8px 10px;
+    background: #f9fafb;
+    border-left: 3px solid #0d9488;
+  }
+  .main .section { margin-bottom: 20px; }
+  .main .section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f2937;
+    text-transform: uppercase;
+    border-bottom: 2px solid #0d9488;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+  .summary { color: #374151; text-align: justify; }
+
+  .job { margin-bottom: 16px; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .job-title { font-weight: 700; color: #1f2937; font-size: 13px; }
+  .job-company { color: #0d9488; font-weight: 600; }
+  .job-meta { font-size: 11.5px; color: #6b7280; font-style: italic; }
+  .job-loc { font-size: 11.5px; color: #6b7280; }
+
+  .project {
+    margin: 8px 0;
+    padding-left: 12px;
+    border-left: 3px solid #0d9488;
+  }
+  .project-title { font-weight: 600; color: #1f2937; font-size: 12.5px; }
+  .project-tech {
+    font-size: 11px;
+    color: #6b7280;
+    margin: 2px 0 4px 0;
+  }
+  .project ul { margin: 4px 0 0 16px; padding: 0; }
+  .project li { margin-bottom: 3px; color: #374151; }
+
+  ul.bullets { margin-left: 16px; }
+  ul.bullets li { margin-bottom: 4px; }
+
+  @media print {
+    body { background: #fff; font-size: 11.5px; }
+    .page { box-shadow: none; margin: 0; max-width: 100%; }
+    .sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    section, .job { break-inside: auto; page-break-inside: auto; }
+    .project { break-inside: avoid; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="avatar-wrap">
+      <img src="cv_cleanup.png" alt="Bùi Công Minh" width="140" height="140" />
+    </div>
+
+    <h1>Bùi Công Minh</h1>
+    <div class="role">Frontend Leader</div>
+
+    <div class="section">
+      <div class="section-title">Thông tin cá nhân</div>
+      <div class="info-item"><strong>Ngày sinh:</strong> 04/10/1997</div>
+      <div class="info-item"><strong>Giới tính:</strong> Nam</div>
+      <div class="info-item"><strong>Điện thoại:</strong> 0386 215 829</div>
+      <div class="info-item"><strong>Email:</strong><br/><a href="mailto:minhcongbui.bka60@gmail.com">minhcongbui.bka60@gmail.com</a></div>
+      <div class="info-item"><strong>Địa chỉ:</strong><br/>27 LK33, KĐT HUD Vân Canh, Nam Từ Liêm, Hà Nội</div>
+      <div class="info-item"><strong>Portfolio:</strong><br/><a href="https://minhbc.vercel.app/">minhbc.vercel.app</a></div>
+      <div class="info-item"><strong>LinkedIn:</strong><br/><a href="https://www.linkedin.com/in/minhbcdev">linkedin.com/in/minhbcdev</a></div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Mục tiêu nghề nghiệp</div>
+      <ul>
+        <li>Phát triển thành Full-stack Developer.</li>
+        <li>Xây dựng đội ngũ mạnh, sẵn sàng đảm nhận mọi quy mô dự án.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Học vấn</div>
+      <div class="info-item"><strong>Đại học Bách Khoa Hà Nội</strong></div>
+      <div class="info-item">Điện tử Viễn thông</div>
+      <div class="info-item">10/2015 – 05/2020 · Đã tốt nghiệp</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Kỹ năng kỹ thuật</div>
+      <span class="tag">Angular 20+</span>
+      <span class="tag">Next.js 13–16</span>
+      <span class="tag">React.js</span>
+      <span class="tag">React Native</span>
+      <span class="tag">Vue 3 / Nuxt</span>
+      <span class="tag">Flutter</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">RxJS</span>
+      <span class="tag">Redux</span>
+      <span class="tag">Tailwind CSS 4</span>
+      <span class="tag">HeroUI</span>
+      <span class="tag">Vuetify</span>
+      <span class="tag">Ant Design</span>
+      <span class="tag">Socket.io</span>
+      <span class="tag">REST API</span>
+      <span class="tag">Firebase</span>
+      <span class="tag">Supabase</span>
+      <span class="tag">Prisma</span>
+      <span class="tag">Figma</span>
+      <span class="tag">SEO</span>
+      <span class="tag">Team Leadership</span>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Ngoại ngữ</div>
+      <div class="info-item">Tiếng Việt — Bản ngữ</div>
+      <div class="info-item">Tiếng Anh — Đọc tài liệu kỹ thuật, giao tiếp công việc</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <div class="nda-notice">
+      Tên dự án được ẩn danh theo hợp đồng bảo mật (NDA) với khách hàng. Có thể trao đổi chi tiết trong buổi phỏng vấn khi được phép.
+    </div>
+
+    <section class="section">
+      <div class="section-title">Tóm tắt kinh nghiệm</div>
+      <p class="summary">
+        Frontend Leader với hơn 6 năm kinh nghiệm triển khai sản phẩm web và mobile quy mô lớn cho doanh nghiệp
+        Nhật Bản và Việt Nam trong các lĩnh vực thương mại điện tử, logistics, HR tech, fintech và B2B.
+        Có thành tích dẫn dắt đội Frontend trong tổ chức sản phẩm lên đến 45 kỹ sư — mentoring developer,
+        thiết lập tiêu chuẩn delivery và vẫn trực tiếp code trên Angular, Next.js, Vue/Nuxt, React Native và Flutter.
+        Triển khai hệ thống real-time, tối ưu SEO end-to-end từ thiết kế Figma, kiến trúc, code review đến release.
+        Thành thạo kết nối UI/UX, frontend và mobile trong một phạm vi ownership.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Kinh nghiệm làm việc</div>
+
+      <!-- GM SOLUTION -->
+      <div class="job">
+        <div class="job-head">
+          <div>
+            <span class="job-title">Frontend Leader</span>,
+            <span class="job-company">GM Solution</span>
+            <span class="job-loc">— Hà Nội</span>
+          </div>
+          <span class="job-meta">07/2022 – Hiện tại</span>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án FRE*** — Sàn thương mại B2B nông sản</div>
+          <div class="project-tech">Angular 20 · Tailwind CSS 4 · Socket.io · RxJS · Java Spring Boot &nbsp;|&nbsp; 06/2025 – Hiện tại &nbsp;|&nbsp; Frontend Leader &nbsp;|&nbsp; Team 45 người</div>
+          <ul>
+            <li><strong>Leadership:</strong> Dẫn dắt sub-team Frontend trong tổ chức sản phẩm 45 người — lập kế hoạch delivery, bóc tách task, điều phối sprint và phối hợp với backend, QA, PM.</li>
+            <li><strong>Leadership:</strong> Thiết lập tiêu chuẩn code review, quy trình PR và convention component; mentoring developer về Angular 20, RxJS và luồng dữ liệu bất đồng bộ.</li>
+            <li>Thiết kế kiến trúc base source Angular 20 cho marketplace đa tenant (seller, buyer, admin), catalog 10.000+ sản phẩm HoReCa, tuân thủ hóa đơn VAT.</li>
+            <li>Triển khai chat real-time Socket.io + RxJS; xây dựng RBAC chi tiết và tối ưu SEO cho mặt thương mại điện tử.</li>
+            <li>Nhúng WebView người bán vào app mobile đối tác, đồng nhất UX web/mobile.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án CAR*** — Nền tảng tuyển dụng nội bộ</div>
+          <div class="project-tech">Next.js 13+ · Tailwind CSS · HeroUI · Java Spring Boot · Figma &nbsp;|&nbsp; 04/2025 – 05/2025 (2 tháng) &nbsp;|&nbsp; Frontend Leader &amp; UI Designer &nbsp;|&nbsp; Team 8 người (24 man-months)</div>
+          <ul>
+            <li><strong>Leadership:</strong> FE owner duy nhất trong squad 8 người — điều phối delivery end-to-end từ Figma đến release trong 2 tháng; chia task, review PR và hỗ trợ unblock đồng đội.</li>
+            <li>Thiết kế Figma, kiến trúc base Next.js và hoàn thành module chat, phân quyền đúng timeline.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án NLJ*** — Hệ thống vận tải đường bộ tự động (Nhật Bản)</div>
+          <div class="project-tech">Next.js 13+ · Tailwind CSS · HeroUI · REST API (Java Spring Boot) &nbsp;|&nbsp; 10/2024 – 03/2025 (6 tháng) &nbsp;|&nbsp; Frontend Leader &nbsp;|&nbsp; Team 20 người (120 man-months)</div>
+          <ul>
+            <li><strong>Leadership:</strong> Dẫn dắt squad FE trong team 20 người — sprint planning, phân task, code review và ra quyết định kỹ thuật cho khách hàng logistics Nhật.</li>
+            <li><strong>Leadership:</strong> Mentoring developer về Next.js/HeroUI; đồng bộ scope FE với API backend và kỳ vọng UX phía client.</li>
+            <li>Thiết kế kiến trúc Frontend, xây dựng quy trình điều phối, quản lý lộ trình và theo dõi đơn hàng real-time.</li>
+            <li>Tối ưu bảng dữ liệu lớn bằng virtualisation và memoisation.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án KOT*** — Giai đoạn 2 / Mobile App (Chấm công, Nhật Bản)</div>
+          <div class="project-tech">Flutter &nbsp;|&nbsp; 05/2024 – 09/2024 (5 tháng) &nbsp;|&nbsp; Mobile Developer &nbsp;|&nbsp; Team 11 người (70 man-months)</div>
+          <ul>
+            <li>Kỹ sư mobile chính cho giai đoạn App của sản phẩm SaaS chấm công doanh nghiệp Nhật Bản.</li>
+            <li>Triển khai check-in/check-out và logic tính lương trên Flutter.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án PAR*** — Quản lý nhân sự &amp; đối tác (Nhật Bản)</div>
+          <div class="project-tech">Next.js 13+ · Figma &nbsp;|&nbsp; 12/2023 – 04/2024 (5 tháng) &nbsp;|&nbsp; Frontend Leader &amp; UI/UX Designer &nbsp;|&nbsp; Team 8 người (88 man-months)</div>
+          <ul>
+            <li><strong>Leadership:</strong> Dẫn dắt delivery Frontend trong team 8 người, vừa code vừa quản lý tiến độ — điều phối task FE, theo dõi milestone và review code cho release khách hàng Nhật.</li>
+            <li><strong>Leadership:</strong> Tư vấn UI/UX thị trường Nhật; chuyển Figma thành cấu trúc component Next.js mà team có thể mở rộng.</li>
+            <li>Xây dựng CMS quản lý linh kiện, đối tác và phân quyền đa cấp trên Next.js.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án KOT*** — Giai đoạn 1 / Web khai thuế &amp; chấm công (Nhật Bản)</div>
+          <div class="project-tech">Vue 3 · Laravel (PHP) · Inertia.js &nbsp;|&nbsp; 04/2023 – 11/2023 (8 tháng) &nbsp;|&nbsp; Frontend Developer &nbsp;|&nbsp; Team 26 người (120 man-months)</div>
+          <ul>
+            <li>Phát triển web khai thuế và chấm công cho nhân viên Nhật trên Vue 3 + Laravel (Inertia.js).</li>
+            <li>Đóng góp form, validation, UI quy tắc thuế và luồng chấm công.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án TAB*** — Mạng xã hội du lịch Nhật Bản</div>
+          <div class="project-tech">Nuxt 2 · Vuetify · Firebase · Flutter · Laravel + MySQL &nbsp;|&nbsp; 07/2022 – 03/2023 (9 tháng) &nbsp;|&nbsp; Frontend Leader &nbsp;|&nbsp; Team 13 người (65 man-months)</div>
+          <ul>
+            <li><strong>Leadership:</strong> Dẫn dắt team Frontend trong dự án 13 người — thiết lập chuẩn chất lượng code, review PR, bóc tách task và mentoring Nuxt 2/Vuetify.</li>
+            <li><strong>Leadership:</strong> Phối hợp squad backend và mobile về tích hợp Firebase, API contract và timeline release.</li>
+            <li>Triển khai feed, chat, comment và push notification; tối ưu hiệu năng UI trên Vuetify.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- LUVINA -->
+      <div class="job">
+        <div class="job-head">
+          <div>
+            <span class="job-title">Frontend &amp; Mobile Developer</span>,
+            <span class="job-company">Luvina Software</span>
+            <span class="job-loc">— Hà Nội</span>
+          </div>
+          <span class="job-meta">05/2020 – 07/2022</span>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án PET*** — Nền tảng chăm sóc thú cưng</div>
+          <div class="project-tech">React.js · Ant Design · Less CSS · Java Spring Boot &nbsp;|&nbsp; 03/2022 – 05/2022 (3 tháng) &nbsp;|&nbsp; Frontend Developer &nbsp;|&nbsp; Team 6 người (60 man-months)</div>
+          <ul>
+            <li>Thiết kế và triển khai Admin Dashboard với hệ thống Ant Design nhất quán, dễ mở rộng.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án NEO*** — Quản lý công trình xây dựng</div>
+          <div class="project-tech">React Native · Vue.js · PHP · NFC / QR · OpenWeather API &nbsp;|&nbsp; 06/2021 – 02/2022 (9 tháng) &nbsp;|&nbsp; Frontend &amp; Mobile Developer &nbsp;|&nbsp; Team 15 người (300 man-months)</div>
+          <ul>
+            <li>Giải quyết bài toán nghiệp vụ phức tạp: sơ đồ cây hiện trường, an toàn lao động, ra vào công trường.</li>
+            <li>Review code, đảm bảo chuẩn coding và đóng gói phát hành APK/IPA.</li>
+            <li>Tích hợp NFC, QR Code và Weather API vào trải nghiệm mobile thống nhất.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án ESR*** — Hệ thống Sales &amp; Marketing</div>
+          <div class="project-tech">React Native · React.js · Redux · Firebase · Axios · Java Spring Boot &nbsp;|&nbsp; 09/2020 – 05/2021 (9 tháng) &nbsp;|&nbsp; Frontend &amp; Mobile Developer &nbsp;|&nbsp; Team 40 người (300 man-months)</div>
+          <ul>
+            <li>Phát triển UI đồng bộ web/mobile từ shared component library.</li>
+            <li>Triển khai chat real-time, push notification Firebase; quản lý state phức tạp bằng Redux.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Dự án BEE*** — R&amp;D Mobile y tế</div>
+          <div class="project-tech">Android Native (Java/Kotlin) · Swift · Flutter (nghiên cứu) &nbsp;|&nbsp; 05/2020 – 08/2020 &nbsp;|&nbsp; Mobile R&amp;D &nbsp;|&nbsp; Team 8 người (200 man-months)</div>
+          <ul>
+            <li>Nghiên cứu native iOS/Android và Flutter; xây dựng module thử nghiệm cho hệ thống quản lý bệnh viện mắt.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- VNPT -->
+      <div class="job">
+        <div class="job-head">
+          <div>
+            <span class="job-title">Frontend Developer (Fresher)</span>,
+            <span class="job-company">VNPT</span>
+            <span class="job-loc">— Hà Nội</span>
+          </div>
+          <span class="job-meta">01/2020 – 05/2020</span>
+        </div>
+        <ul class="bullets">
+          <li>Làm fresher fulltime, tập trung JavaScript, HTML và CSS.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Dự án Freelance</div>
+      <div class="job">
+        <div class="job-head">
+          <div>
+            <span class="job-title">Dự án GUV*** — Nền tảng dịch vụ giúp việc nhà</span>
+          </div>
+          <span class="job-meta">05/2021 – 10/2021</span>
+        </div>
+        <div class="project">
+          <div class="project-tech">React Native · React.js · Redux · REST API &nbsp;|&nbsp; Frontend &amp; Mobile Developer</div>
+          <ul>
+            <li>Phụ trách chính toàn bộ UI và luồng nghiệp vụ cho app mobile và web vận hành.</li>
+            <li>Xây dựng đặt lịch real-time, quản lý trạng thái đơn, định vị bản đồ và đánh giá sau dịch vụ.</li>
+            <li>Tối ưu hiệu suất trên iOS, Android và trình duyệt.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Dự án cá nhân</div>
+      <div class="job">
+        <div class="job-head">
+          <div>
+            <span class="job-title">Dự án VIVU*** — Nền tảng du lịch Việt Nam</span>
+          </div>
+          <span class="job-meta">02/2026 – Hiện tại</span>
+        </div>
+        <div class="project">
+          <div class="project-tech">Next.js 16 · Prisma · Supabase (Auth &amp; DB) · Expo &nbsp;|&nbsp; Full-stack tự học</div>
+          <ul>
+            <li>Dự án full-stack quảng bá du lịch Việt Nam với Next.js mới nhất và xác thực Supabase.</li>
+            <li>Thiết kế schema, auth flow và codebase dùng chung cho web (Next.js) và mobile (Expo).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+</body>
+</html>
