@@ -1,29 +1,48 @@
 import type { Metadata } from "next";
-import { Fira_Code } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const firaCode = Fira_Code({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-fira-code",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: "Bùi Công Minh - Frontend Developer",
+  metadataBase: new URL("https://minhbc.vercel.app"),
+  title: {
+    default: "Bui Cong Minh — Frontend Leader",
+    template: "%s",
+  },
   description:
-    "Bùi Công Minh — phát triển frontend (web & mobile). Next.js, Nuxt, Vue, React, React Native; Flutter thường dùng; Angular theo dự án.",
+    "Frontend Leader with 6+ years of experience building web and mobile products for Japanese and Vietnamese enterprises.",
   keywords: [
-    "Frontend Developer",
-    "Mobile Developer",
+    "Frontend Leader",
+    "Senior Frontend Engineer",
     "Next.js",
-    "Nuxt",
-    "Vue",
+    "Angular",
     "React",
+    "Vue",
+    "Nuxt",
     "React Native",
     "Flutter",
-    "Angular",
+    "TypeScript",
+    "Bui Cong Minh",
   ],
-  authors: [{ name: "Bùi Công Minh" }],
-  viewport: "width=device-width, initial-scale=1",
+  authors: [{ name: "Bui Cong Minh" }],
+  creator: "Bui Cong Minh",
+  openGraph: {
+    title: "Bui Cong Minh — Frontend Leader",
+    description:
+      "Frontend Leader with 6+ years of experience building web and mobile products for Japanese and Vietnamese enterprises.",
+    url: "https://minhbc.vercel.app",
+    siteName: "Bui Cong Minh Portfolio",
+    locale: "en_US",
+    type: "profile",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -32,9 +51,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='vi' className='scroll-smooth'>
+    <html lang='en' className='scroll-smooth'>
       <body
-        className={`${firaCode.variable} font-mono antialiased`}
+        className={`${inter.variable} antialiased`}
         suppressHydrationWarning={true}
       >
         {children}
