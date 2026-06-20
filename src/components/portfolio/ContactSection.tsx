@@ -4,7 +4,7 @@ import { profile } from "@/data/portfolio";
 import type { PortfolioPageContext } from "@/types/portfolio";
 import { fadeIn } from "./motion";
 
-export function ContactSection({ alternateLang, emailHref, t }: PortfolioPageContext) {
+export function ContactSection({ alternateLang, emailHref, lang, t }: PortfolioPageContext) {
   return (
     <section id="contact" className="section bg-slate-900 text-white">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.9fr]">
@@ -19,7 +19,7 @@ export function ContactSection({ alternateLang, emailHref, t }: PortfolioPageCon
               {t.hero.ctas.email}
             </a>
             <Link className="btn-dark" href={`/${alternateLang}`}>
-              {alternateLang.toUpperCase()} version
+              {lang === "vi" ? `Phiên bản ${alternateLang.toUpperCase()}` : `${alternateLang.toUpperCase()} version`}
             </Link>
           </div>
         </motion.div>

@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
-import type { PortfolioContent } from "@/types/portfolio";
+import type { Locale, PortfolioContent } from "@/types/portfolio";
 import { fadeIn } from "./motion";
 import { TagList } from "./TagList";
 
-export function SkillsSection({ t }: { t: PortfolioContent }) {
+export function SkillsSection({ lang, t }: { lang: Locale; t: PortfolioContent }) {
   return (
     <section id="skills" className="section bg-white">
       <div className="mx-auto max-w-7xl">
         <motion.div {...fadeIn()} className="max-w-3xl">
-          <p className="section-kicker">Capabilities</p>
+          <p className="section-kicker">{lang === "vi" ? "Năng lực" : "Capabilities"}</p>
           <h2 className="section-title">{t.skillsTitle}</h2>
         </motion.div>
 

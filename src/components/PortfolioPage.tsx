@@ -46,10 +46,10 @@ export function PortfolioPage({ lang }: { lang: Locale }) {
       <Header {...context} />
       <Hero {...context} />
       <AboutSection t={t} />
-      <SkillsSection t={t} />
-      <LeadershipSection t={t} />
-      <ExperienceSection t={t} />
-      <ProjectsSection t={t} />
+      <SkillsSection lang={lang} t={t} />
+      <LeadershipSection lang={lang} t={t} />
+      <ExperienceSection lang={lang} t={t} />
+      <ProjectsSection lang={lang} t={t} />
       <EducationSection t={t} />
       <ContactSection {...context} />
       <Footer lang={lang} t={t} />

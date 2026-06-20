@@ -76,7 +76,7 @@ export function Hero({ emailHref, lang, t }: PortfolioPageContext) {
             <div>
               <p className="text-sm uppercase tracking-[0.22em] text-teal-200">{profile.role}</p>
               <h2 className="mt-2 text-2xl font-bold">{profile.name[lang]}</h2>
-              <p className="mt-1 text-slate-300">{profile.location}</p>
+              <p className="mt-1 text-slate-300">{profile.location[lang]}</p>
             </div>
           </div>
 

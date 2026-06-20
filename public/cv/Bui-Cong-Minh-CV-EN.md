@@ -4,13 +4,13 @@
 Hanoi, Vietnam · minhcongbui.bka60@gmail.com · +84 386 215 829
 Portfolio: https://minhbc.vercel.app/ · GitHub: https://github.com/minhbc97 · LinkedIn: https://www.linkedin.com/in/minhbcdev
 
-> *Project codenames are used to comply with client NDAs. Full context can be discussed during interviews where permitted.*
+> *Project names are anonymized to comply with client NDAs.*
 
 ---
 
 ## Professional Summary
 
-Frontend Leader with 6+ years of experience delivering large-scale web and mobile products for Japanese and Vietnamese enterprises across e-commerce, logistics, HR tech, fintech and B2B platforms. Proven record of leading frontend teams within product organisations of up to 45 engineers — mentoring developers, establishing delivery standards, and driving hands-on execution across Angular, Next.js, Vue/Nuxt, React Native and Flutter. Ship real-time, SEO-optimised systems end-to-end from Figma design through architecture, code review and release. Comfortable bridging UI/UX, frontend and mobile concerns within a single ownership scope.
+Frontend Leader with 6+ years of experience delivering large-scale web and mobile products for Japanese and Vietnamese enterprises across e-commerce, logistics, HR tech, fintech and B2B platforms. Proven record of directly leading frontend teams of up to 7 members within product organisations of up to 45 people — mentoring developers, establishing delivery standards, and driving hands-on execution across Angular, Next.js, Vue/Nuxt, React Native and Flutter. Ship real-time, SEO-optimised systems end-to-end from Figma design through architecture, code review and release. Comfortable bridging UI/UX, frontend and mobile concerns within a single ownership scope.
 
 ---
 
@@ -34,33 +34,33 @@ Frontend Leader with 6+ years of experience delivering large-scale web and mobil
 *Hanoi, Vietnam · Jul 2022 – Present*
 
 **Project FRE\*\*\* — B2B Agricultural Marketplace**
-*Angular 20 · Tailwind CSS 4 · Socket.io · RxJS · Java Spring Boot APIs | Jun 2025 – Present | Frontend Leader | 45-person product team*
-- **Leadership:** Led the frontend sub-team within a 45-person product organisation — owned FE delivery planning, task breakdown, sprint coordination, and alignment with backend, QA and PM.
-- **Leadership:** Established code review standards, PR guidelines and component conventions; mentored developers on Angular 20, RxJS and async data-flow patterns.
-- Defined the Angular 20 base-source architecture for a multi-tenant marketplace (seller, buyer, admin) serving HoReCa with 10,000+ products and full VAT-invoice compliance.
-- Architected real-time chat on Socket.io with RxJS pipelines; built fine-grained RBAC and led SEO optimisation for the e-commerce surface.
-- Embedded seller WebView in the partner mobile app for a unified web/mobile UX.
+*Angular 20 · Tailwind CSS 4 · Socket.io · RxJS · Java Spring Boot APIs | Jun 2025 – Present | Frontend Leader | Led 7 frontend members within a product team of up to 45 people*
+- **Leadership:** Led the 7-member frontend team — delivery planning, task breakdown, sprint coordination, and alignment with backend, QA and PM.
+- Built the Angular base source, common modules and reusable conventions; created review checklists and delivery standards for the team.
+- Reviewed member code, advised on technical direction and suggested implementation approaches for complex product features.
+- Owned difficult frontend modules including SEO, Google tracking, chat, notifications, cart flows, admin permissions, charts, RBAC and WebView integration.
 
 **Project CAR\*\*\* — Internal Recruitment Platform**
-*Next.js 13+ · Tailwind CSS · HeroUI · Java Spring Boot · Figma | Apr 2025 – May 2025 (2 mo) | Frontend Leader & UI Designer | 8-person team (24 man-months)*
-- **Leadership:** Sole FE owner in an 8-person squad — drove end-to-end delivery from Figma to release within a 2-month deadline; split tasks, reviewed PRs and unblocked teammates.
-- Designed UI in Figma, defined Next.js base architecture and shipped chat and role-based permission modules on schedule.
+*Next.js 13+ · Tailwind CSS · HeroUI · Java Spring Boot · Figma | Apr 2025 – May 2025 (2 mo) | Frontend Leader & UI Designer | 2-person frontend team within an 8-person internal product squad*
+- Joined early in the Figma design phase and helped shape the internal recruitment product experience.
+- Built the Next.js base source, common modules and SEO setup for the 2-person frontend team.
+- Reviewed teammate code, aligned implementation details and supported delivery within the 2-month timeline.
+- Implemented key modules including chat and role-based permissions.
 
 **Project NLJ\*\*\* — Automated Road Transport (Japan)**
-*Next.js 13+ · Tailwind CSS · HeroUI · REST API (Java Spring Boot) | Oct 2024 – Mar 2025 (6 mo) | Frontend Leader | 20-person team (120 man-months)*
-- **Leadership:** Led the FE squad within a 20-person team — sprint planning, task assignment, code review and technical decision-making for a Japanese logistics client.
-- **Leadership:** Mentored developers on Next.js/HeroUI patterns; aligned FE scope with backend API contracts and client UX expectations.
+*Next.js 13+ · Tailwind CSS · HeroUI · REST API (Java Spring Boot) | Oct 2024 – Mar 2025 (6 mo) | Frontend Leader | Led a 4-person frontend team within a 20-person, 120 man-month project*
+- **Leadership:** Led sprint planning, task assignment, code review and technical decision-making for a Japanese logistics client.
 - Defined frontend architecture and built dispatching workflow with route management and real-time order tracking.
 - Optimised large operational data tables via virtualisation and memoisation.
 
 **Project KOT\*\*\* — Phase 2 / Mobile App (Workforce Time-Tracking, Japan)**
-*Flutter | May 2024 – Sep 2024 (5 mo) | Mobile Developer | 11-person team (70 man-months)*
-- Primary mobile engineer on the App phase of a Japanese workforce time-tracking SaaS product.
-- Implemented attendance flows (check-in / check-out) and payroll-related logic on Flutter, optimised for the client's reliability and UX standards.
+*Flutter | May 2024 – Sep 2024 (5 mo) | Frontend & Mobile Developer | 11-person team (70 man-months)*
+- Contributed to the Flutter app phase of a Japanese workforce time-tracking SaaS product.
+- Implemented attendance flows and payroll-related logic in coordination with the product and backend teams.
 
 **Project PAR\*\*\* — HR & Partner Management Platform (Japan)**
-*Next.js 13+ · Figma | Dec 2023 – Apr 2024 (5 mo) | Frontend Leader & UI/UX Designer | 8-person team (88 man-months)*
-- **Leadership:** Led frontend delivery in an 8-person team while balancing hands-on coding — coordinated FE tasks, tracked progress and conducted code reviews for Japanese enterprise releases.
+*Next.js 13+ · Figma | Dec 2023 – Apr 2024 (5 mo) | Frontend Leader & UI/UX Designer | Led a 2-person frontend team within an 8-person, 88 man-month project*
+- **Leadership:** Led frontend delivery in a 2-person frontend team while balancing hands-on coding — coordinated FE tasks, tracked progress and conducted code reviews for Japanese enterprise releases.
 - **Leadership:** Advised the client on UI/UX patterns for the Japanese market; translated Figma designs into a scalable Next.js component structure the team could extend.
 - Built CMS for component, partner and multi-level permission management on Next.js.
 

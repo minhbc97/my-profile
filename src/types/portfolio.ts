@@ -28,6 +28,7 @@ export type Experience = {
 
 export type Project = {
   codename: string;
+  featured?: boolean;
   title: string;
   period: string;
   role: string;
@@ -39,7 +40,7 @@ export type Project = {
 export type Profile = {
   name: Record<Locale, string>;
   role: string;
-  location: string;
+  location: Record<Locale, string>;
   email: string;
   phone: string;
   linkedin: string;

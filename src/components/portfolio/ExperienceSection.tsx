@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import type { PortfolioContent } from "@/types/portfolio";
+import type { Locale, PortfolioContent } from "@/types/portfolio";
 import { fadeIn } from "./motion";
 
-export function ExperienceSection({ t }: { t: PortfolioContent }) {
+export function ExperienceSection({ lang, t }: { lang: Locale; t: PortfolioContent }) {
   return (
     <section id="experience" className="section bg-white">
       <div className="mx-auto max-w-5xl">
         <motion.div {...fadeIn()} className="text-center">
-          <p className="section-kicker">Career</p>
+          <p className="section-kicker">{lang === "vi" ? "Kinh nghiệm" : "Career"}</p>
           <h2 className="section-title">{t.experienceTitle}</h2>
         </motion.div>
 
@@ -30,7 +30,13 @@ export function ExperienceSection({ t }: { t: PortfolioContent }) {
                   </p>
                 </div>
                 <span className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-600">
-                  {index === 0 ? "Current" : "Previous"}
+                  {index === 0
+                    ? lang === "vi"
+                      ? "Hiện tại"
+                      : "Current"
+                    : lang === "vi"
+                      ? "Trước đây"
+                      : "Previous"}
                 </span>
               </div>
               <p className="mt-5 leading-7 text-slate-600">{item.summary}</p>

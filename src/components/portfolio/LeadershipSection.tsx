@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import type { PortfolioContent } from "@/types/portfolio";
+import type { Locale, PortfolioContent } from "@/types/portfolio";
 import { fadeIn } from "./motion";
 
-export function LeadershipSection({ t }: { t: PortfolioContent }) {
+export function LeadershipSection({ lang, t }: { lang: Locale; t: PortfolioContent }) {
   return (
     <section id="leadership" className="section relative overflow-hidden">
       <motion.div
@@ -13,7 +13,7 @@ export function LeadershipSection({ t }: { t: PortfolioContent }) {
       />
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <motion.div {...fadeIn()}>
-          <p className="section-kicker">Leadership</p>
+          <p className="section-kicker">{lang === "vi" ? "Dẫn dắt đội ngũ" : "Leadership"}</p>
           <h2 className="section-title">{t.leadership.title}</h2>
           <p className="section-copy text-left">{t.leadership.intro}</p>
         </motion.div>
